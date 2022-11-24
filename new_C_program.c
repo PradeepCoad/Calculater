@@ -58,10 +58,18 @@ float squarRoot(){
     printf("Squar Root =%f",c);
     return 0;
 }
+float areaOfRectangel(){
+    float a,b,area;
+    printf("Enter sides =");
+    scanf("%f %f",&a,&b);
+   area=a*b;
+    printf("Area of rectangel =%f",area);
+    return 0;
+}
 
 void main(){
 
-printf(" 1=Addition \n 2=Subtraction \n 3=Multiplication \n 4=Division \n 5=Reminder \n 6=Power \n 7=Squar root \n Choose a function:");
+printf(" 1=Addition \n 2=Subtraction \n 3=Multiplication \n 4=Division \n 5=Reminder \n 6=Power \n 7=Squar root \n 8=Area of Rectangel \n Choose a function:");
 int a;
 scanf("%d",&a);
 
@@ -87,6 +95,8 @@ if (a==1)
 }else if (a==7)
 {
   squarRoot();
+}else if(a==8){
+  areaOfRectangel();
 }else{
     printf("##########----------Wrong input----------##########");
 }
