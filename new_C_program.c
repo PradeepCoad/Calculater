@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<math.h>
 #include<conio.h>
-int x;
 int Addition(){
     int a,b;
     printf("Enter a and b=");
@@ -66,10 +65,18 @@ float areaOfRectangel(){
     printf("Area of rectangel =%f",area);
     return 0;
 }
+float areaOfCircle(){
+  float r,a;
+  printf("Enter radius=");
+  scanf("%f",&r);
+  a=3.14*r*r;
+  printf("%f",a);
+  return 0;
+} 
 
 void main(){
 
-printf(" 1=Addition \n 2=Subtraction \n 3=Multiplication \n 4=Division \n 5=Reminder \n 6=Power \n 7=Squar root \n 8=Area of Rectangel \n Choose a function:");
+printf(" 1=Addition \n 2=Subtraction \n 3=Multiplication \n 4=Division \n 5=Reminder \n 6=Power \n 7=Squar root \n 8=Area of Rectangel \n9=Area of circle \n Choose a function:");
 int a;
 scanf("%d",&a);
 
@@ -97,6 +104,8 @@ if (a==1)
   squarRoot();
 }else if(a==8){
   areaOfRectangel();
+}else if(a==9){
+  areaOfCircle();
 }else{
     printf("##########----------Wrong input----------##########");
 }
