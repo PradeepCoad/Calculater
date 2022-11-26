@@ -80,35 +80,30 @@ printf(" 1=Addition \n 2=Subtraction \n 3=Multiplication \n 4=Division \n 5=Remi
 int a;
 scanf("%d",&a);
 
-
-if (a==1)
+switch(a)
 {
-  Addition();
-}else if (a==2)
-{
-  Subtract();
-}else if (a==3)
-{
-  Product();
-}else if (a==4)
-{
-  Division();
-}else if (a==5)
-{
-  Reminder();
-}else if (a==6)
-{
-  Power();
-}else if (a==7)
-{
-  squarRoot();
-}else if(a==8){
-  areaOfRectangel();
-}else if(a==9){
-  areaOfCircle();
-}else{
-    printf("##########----------Wrong input----------##########");
+  case 1:Addition();
+  break;
+  case 2:Subtract();
+  break;
+  case 3:Product();
+  break;
+  case 4:Division();
+  break;
+  case 5:Reminder();
+  break;
+  case 6:Power();
+  break;
+  case 7:squarRoot();
+  break;
+  case 8:areaOfRectangel();
+  break;
+  case 9:areaOfCircle();
+  break;
+  default:printf("Wrong input");
+  break;
 }
+
 
 
 }
