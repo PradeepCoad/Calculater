@@ -101,7 +101,7 @@ switch(a)
   break;
   case 9:areaOfCircle();
   break;
-  default:printf("Wrong input");
+  default:printf("------Wrong input------");
   break;
 }
 
